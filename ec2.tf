@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "ap-souh-1"
+  region  = "ap-south-1"
   profile = "myaashi"
 }
 
