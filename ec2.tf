@@ -1,16 +1,15 @@
 provider "aws" {
-  region  = "ap-south-1"
-  profile = "myaashi"
+  region = "ap-south-1"
+  profile = "aashi"
 }
 
-resource "aws_instance"  "myin" {
-  ami             =  "ami-id here"
-  instance_type   =  "t2.micro"
-  keyname         =  "mykey123"
-  security_group  =  ["launch-wizard-1"]
+resource "aws_instance" "web1" {
+  ami           = "ami-005956c5f0f757d37"
+  instance_type = "t2.micro"
+  key_name      = "myamazonkey123"
+  security_groups = ["launch-wizard-2"]
 
   tags = {
     Name = "MyOS1"
   }
 }
-
